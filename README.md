@@ -19,9 +19,9 @@ The rgMan app will automatically install this application so the following steps
 On the Raspberry Pi Zero W from a [SSH session](https://www.raspberrypi.org/magpi/ssh-remote-control-raspberry-pi/):  
 * Create a the rgservice system user account (if not already created) by typing `sudo adduser rgservice --system --ingroup irdclient`
 * type `cd /opt/rGauge/gList`.  All rGauge apps are installed from this directory.  The directory should already exist if [rgMan](https://github.com/RuckerGauge/rgMan) has been installed correctly.
-* type `git clone https://github.com/RuckerGauge/GraftonRiverGauge.git`
+* type `git clone https://github.com/RuckerGauge/MelPriceRiverGauge.git`
   * This will create a new subdirectory and download the latest version of this node.js app.
-* type `cd GraftonRiverGauge`
+* type `cd MelPriceRiverGauge`
 * type `npm install`
   * The npm install process will install the node dependencies. 
 

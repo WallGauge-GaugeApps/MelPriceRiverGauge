@@ -1,21 +1,21 @@
 [Unit]
-Description=GraftonRiverGauge
+Description=MelPriceRiverGauge
 Wants=rgMan.service
 After=rgMan.service
 
 [Service]
 Type=dbus
-BusName=com.GraftonRiverGauge
-ExecStart=/usr/local/bin/node /opt/rGauge/gList/GraftonRiverGauge/app.js
+BusName=com.MelPriceRiverGauge
+ExecStart=/usr/local/bin/node /opt/rGauge/gList/MelPriceRiverGauge/app.js
 Restart=on-failure
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=GraftonRiverGauge
+SyslogIdentifier=MelPriceRiverGauge
 User=rgservice
 Group=irdclient
 Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Environment=NODE_ENV=production
-WorkingDirectory=/opt/rGauge/gList/GraftonRiverGauge
+WorkingDirectory=/opt/rGauge/gList/MelPriceRiverGauge
 
 [Install]
 WantedBy=multi-user.target
