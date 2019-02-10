@@ -1,7 +1,7 @@
 const RvrDta =  require('river-data-fetcher');
 const AppMan =  require('app-manager');
 
-const myAppMan = new AppMan();
+const myAppMan = new AppMan(__dirname + '/gaugeConfig.json', __dirname + '/modifiedConfig.json');
 
 console.log('__________________ App Config follows __________________');
 console.dir(myAppMan.config, {depth: null});
