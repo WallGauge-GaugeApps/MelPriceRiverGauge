@@ -1,0 +1,10 @@
+{
+    "descripition":"Alton Mel Price L&D",
+    "uuid":"9b47b806-7219-4f06-839a-3beef9812ffd",
+    "dBusName":"com.MelPriceRiverGauge",
+    "calibrationTable": [[0,15],[9,56],[18,97],[20,136],[26,257],[32,374],[38,494],[44,613]],
+    "dataSiteCode":"385205090090501",
+    "dataParCode":"00065",
+    "dataLoc":"instant",
+    "gaugeIrAddress":"2"
+}

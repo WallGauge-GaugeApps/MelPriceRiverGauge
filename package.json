@@ -1,0 +1,24 @@
+{
+  "name": "mel-price-river-gauge",
+  "version": "1.4.0",
+  "description": "Sends data to RG-wallhang wirelessly over infrared",
+  "main": "app.js",
+  "scripts": {
+    "test": "",
+    "postinstall": "./postInstall/installAsService.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuckerGauge/MelPriceRiverGauge.git"
+  },
+  "author": "John Rucker",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "app-manager": "git+https://github.com/RuckerGauge/appManager.git",
+    "river-data-fetcher": "git+https://github.com/RuckerGauge/RvrDataFetcher.git"
+  }
+}
