@@ -6,10 +6,10 @@ echo "Set irdclient as defalut group for MelPriceRiverGauge -> sudo chown :irdcl
 sudo chown :irdclient ../MelPriceRiverGauge
 echo "Give default group write access to the MelPriceRiverGauge directory -> sudo chmod g+w ../MelPriceRiverGauge"
 sudo chmod g+w ../MelPriceRiverGauge
-echo "Install D-Bus config file for this service -> sudo cp ./postInstall/MelPriceRiverGauge.conf /etc/dbus-1/system.d"
-sudo cp ./postInstall/MelPriceRiverGauge.conf /etc/dbus-1/system.d
-echo "Install systemd service file -> cp -n ./postInstall/MelPriceRiverGauge.service /etc/systemd/system"
-sudo cp -n ./postInstall/MelPriceRiverGauge.service /etc/systemd/system
+echo "Install D-Bus config file for this service -> sudo cp ./postInstall/dbus.conf /etc/dbus-1/system.d/MelPriceRiverGauge.conf"
+sudo cp ./postInstall/dbus.conf /etc/dbus-1/system.d/MelPriceRiverGauge.conf
+echo "Install systemd service file -> sudo cp -n ./postInstall/server.service /etc/systemd/system/MelPriceRiverGauge.service"
+sudo cp -n ./postInstall/server.service /etc/systemd/system/MelPriceRiverGauge.service
 echo "Enable the servers to start on reboot -> systemctl enable MelPriceRiverGauge.service"
 sudo systemctl enable MelPriceRiverGauge.service
 #echo "Start the service now -> systemctl start MelPriceRiverGauge.service"
