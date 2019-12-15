@@ -3,8 +3,8 @@
 # From DOS prompt type (git update-index --chmod=+x un-installAsService.sh) to make this file executable.
 # set -e  <-This will cause script to end on first error with error code
 echo "un-install service will stop and remove this app as a service starts now..."
-#echo "Stop service -> systemctl stop MelPriceRiverGauge.service"
-#sudo systemctl stop MelPriceRiverGauge.service
+echo "Stop service -> systemctl stop MelPriceRiverGauge.service"
+sudo systemctl stop MelPriceRiverGauge.service
 echo "Disable servers so it will not start on reboot ->systemctl disable MelPriceRiverGauge.service"
 sudo systemctl disable MelPriceRiverGauge.service
 echo "Remove the systemd service file -> rm /etc/systemd/system/MelPriceRiverGauge.service"
