@@ -1,6 +1,6 @@
 {
   "name": "mel-price-river-gauge",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Sends data to RG-wallhang wirelessly over infrared",
   "main": "app.js",
   "scripts": {
