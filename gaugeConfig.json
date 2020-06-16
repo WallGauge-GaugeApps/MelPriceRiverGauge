@@ -8,5 +8,6 @@
     "dataLoc":"instant",
     "gaugeIrAddress":"2",
     "battLifeInDays":"365",
-    "battLastReplaced":""
+    "battLastReplaced":"",
+    "gaugeURL":"https://water.weather.gov/ahps2/hydrograph.php?wfo=lsx&gage=alni2&prob_type=stage&source=hydrograph"
 }
